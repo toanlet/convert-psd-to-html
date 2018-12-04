@@ -1,0 +1,106 @@
+.main {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 14px;
+  margin: 0 auto;
+  max-width: 400px;
+}
+.form-sign {
+  width: 400px;
+  position: absolute;
+  top: 55%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  padding: 30px 25px;
+ 
+  background: white;
+  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.46);
+  border-radius: 5px;
+}
+.wrap {
+  margin-bottom: 15px;
+ 
+}
+.pd {
+  margin-left: -6px;
+  margin-right: -6px
+}
+.mg {
+  margin-left: 6px;
+  margin-right: 6px
+}
+.main h2 {
+  color: #949494;
+  font-size: 22px;
+
+}
+.main h2 span {
+  font-weight: 600;
+  color: #707070;
+}
+.form-sign input {
+  background: #f0f0f0;
+ 
+}
+.form-sign .bt {
+  width: 95px;
+  height: 35px;
+  border-radius: 5px;
+  background: #fea15d;
+  color: white;
+  border: none;
+}
+.form-sign .check-box {
+  opacity: 0;
+}
+.form-sign label {
+  margin-left: -15px;
+  color: #b7b7b7;
+  position: relative;
+}
+.form-sign label::before {
+  content: "";
+  height: 15px;
+  width: 15px;
+  border-radius: 3px;
+  background: rebeccapurple;
+  display: inline-block;
+  margin-right: 10px;
+  
+}
+.form-sign label::after {
+  height: 6px;
+  width: 9px;
+  
+  transform: rotate(-45deg);
+  position: absolute;
+  left: 3px;
+  border-left: 1px solid white;
+  border-bottom: 1px solid white;
+  top: 2px;
+}
+.form-sign input[type="checkbox"] + label::after {
+  content: none;
+}
+.form-sign input[type="checkbox"]:checked + label::after {
+  content: "";
+}
+.form-sign p {
+  color: #b7b7b7;
+  font-size: 11px;
+}
+.form-sign a {
+  color: #9b9b9b;
+  text-decoration: none;
+
+}
+@media only screen and (max-width: 568px) {
+  .form-sign {
+      width: 90%;
+  }
+  .main h2 {
+    position: absolute;
+    top: 15%;
+    left: 32%;
+
+  }
+}
